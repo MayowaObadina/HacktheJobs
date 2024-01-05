@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HacktheJobs</title>
+    <link rel="icon" type="image/png" href="img/Favicon.png">
+
+    <!-- css styles -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="waitlist.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/f86dd9dbaa.js" crossorigin="anonymous"></script>
+
+        <!-- scripts -->
+    <script src="index.js"></script>
+</head>
+<body>
+
+    <!-- NavBar -->
+    <header>
+        <nav class="navbar">
+            <div class="Logo">
+                <h2><a href="index.html"> Hack<span class="green">the</span>Jobs</a></h2>
+            </div>
+            <div>
+                <ul class="link">
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="#contact us">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="cta navbtn">
+                <a href="waitlist.html"><button type="button">Join Waitlist</button></a>
+            </div>
+
+            <div class="hamburger">
+                <button type="button" onclick="toggleSidebar()"><p>&#9776;</p></button>
+            </div>
+
+            <div class="sidebar">
+                <ul class="sidebarlink">
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="#contact us">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Waitlist form starts here -->
+    <section class="waitlist">
+        <div class="waitlist-text">
+            <h2>JOIN THE WAITLIST</h2>
+            <h1>You are at the right place!</h1>
+            <p>Don't stop now, fill in your details correctly and get ready to gain real-life experiences</p>
+        </div>
+
+        <div class="form-field">
+            <h2>HacktheJobs Waitlist</h2>
+
+            <form action="" autocomplete="on">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Email Address" required autofocus>
+
+                <label for="name">Preferred Name</label>
+                <input type="text" id="name" name="name" placeholder="Name" required title="John Doe">
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number" required maxlength="11" pattern="[0-9]{11}" title="Enter 11 genuine digits: 09094778896">
+
+                <label for="gender">Gender</label>
+                <div class="dropdown">
+                    <select class="dropdown-lists" name="gender" id="gender" required>
+                    <option class="selected" value=""  selected disabled>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    </select>
+                </div>
+                
+                <label for="bootcamp">Have you ever attended a Boot Camp?</label>
+                <div class="dropdown">
+                    <select class="dropdown-lists" name="bootcamp" id="bootcamp" required>
+                    <option class="selected" value="" selected disabled>Select Option</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    </select>
+                </div>
+
+                <div style="display: flex; justify-content: space-between;">
+                    <label for="duration">If yes, what was the duration?</label>
+                    <p>(Optional)</p>
+                </div>
+                <div class="dropdown">
+                    <select class="dropdown-lists" name="duration" id="duration">
+                    <option class="selected" value="" selected disabled>Select Duration</option>
+                    <option value="3-months">3 Months</option>
+                    <option value="6-months">6 Months</option>
+                    <option value="12-months">12 Months</option>
+                    </select>
+                </div>
+
+                <label for="skills">What skills do you have?</label>
+                <div class="dropdown">
+                    <select class="dropdown-lists" name="skills" id="skills" required>
+                    <option class="selected" value="" selected disabled>Select Skill</option>
+                    <option value="frontend">Front-End Development</option>
+                    <option value="backend">Back-End Development</option>
+                    <option value="product-management">Product Management</option>
+                    <option value="product-design">Product Design</option>
+                    <option value="mobile-app">Mobile App Development</option>
+                    <option value="data-science">Data Science</option>
+                    </select>
+                </div>
+
+                <label for="location">Location</label>
+                <div class="dropdown">
+                    <select class="dropdown-lists" name="skills" id="skills" required>
+                    <option class="selected" value="" selected disabled>Select Location</option>
+                    <option value="abia">Abia</option>
+                    <option value="adamawa">Adamawa</option>
+                    <option value="akwa-ibom">Akwa Ibom</option>
+                    <option value="anambra">Anambra</option>
+                    <option value="bauchi">Bauchi</option>
+                    <option value="bayelsa">Bayelsa</option>
+                    <option value="benue">Benue</option>
+                    <option value="borno">Borno</option>
+                    <option value="cross-river">Cross River</option>
+                    <option value="delta">Delta</option>
+                    <option value="ebonyi">Ebonyi</option>
+                    <option value="edo">Edo</option>
+                    <option value="ekiti">Ekiti</option>
+                    <option value="enugu">Enugu</option>
+                    <option value="gombe">Gombe</option>
+                    <option value="imo">Imo</option>
+                    <option value="jigawa">Jigawa</option>
+                    <option value="kaduna">Kaduna</option>
+                    <option value="kano">Kano</option>
+                    <option value="katsina">Katsina</option>
+                    <option value="kebbi">Kebbi</option>
+                    <option value="kogi">Kogi</option>
+                    <option value="kwara">Kwara</option>
+                    <option value="lagos">Lagos</option>
+                    <option value="nasarawa">Nasarawa</option>
+                    <option value="niger">Niger</option>
+                    <option value="ogun">Ogun</option>
+                    <option value="ondo">Ondo</option>
+                    <option value="osun">Osun</option>
+                    <option value="oyo">Oyo</option>
+                    <option value="plateau">Plateau</option>
+                    <option value="rivers">Rivers</option>
+                    <option value="sokoto">Sokoto</option>
+                    <option value="taraba">Taraba</option>
+                    <option value="yobe">Yobe</option>
+                    <option value="zamfara">Zamfara</option>
+                    <option value="fct">Federal Capital Territory (FCT)</option>
+                    </select>
+                </div>
+
+                <label for="about-us">How did you hear about us?</label>
+                <div class="dropdown">
+                    <select class="dropdown-lists" name="about-us" id="about-us">
+                    <option class="selected" value="" selected disabled>Select Option</option>
+                    <option value="whatsapp">WhatsApp</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="twitter">Twitter</option>
+                    <option value="linkedin">LinkedIn</option>
+                    </select>
+                </div>
+
+                <div class="submit-button">
+                    <input class="submit" type="submit"  value="Submit">
+                </div>
+            </form>
+
+        </div>
+
+    </section>
+        
+    <!-- Footer starts here -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-text">
+                <h2>
+                    Take your skills to the next level by joining us
+                </h2>
+                <div class= "cta footer-btn">
+                    <a href="waitlist.html"><button type="button">Start Now</button></a>
+                </div>                
+            </div>
+
+            <div>
+                <div class="Logo">
+                    <h2><a href="index.html"> Hack<span class="green">the</span>Jobs</a></h2>
+                </div>
+
+                <div class="social-media">
+                    <a href="#gmail"><i class="fa-brands fa-google"></i></a>
+                    <a href="#instagram"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#youtube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#twitter"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="footer-links">
+                    <div>
+                        <ul>
+                            <a href="about.html"><li>About us</li></a>
+                            <a href="#how"><li>How it works</li></a>
+                            <a href="#privacy"><li>Privacy Policy</li></a>
+                            <a href="jobs"><li>Jobs</li></a>
+                        </ul>
+                    </div> 
+
+                    <div>
+                        <ul>
+                            <a href="#terms"><li>Terms & Conditions</li></a>
+                            <a href="#contact"><li>Contact us</li></a>
+                            <a href="#faq"><li>FAQs</li></a>
+                            <a href="#testimonies"><li>Testimonies</li></a>
+                        </ul>
+                    </div> 
+                </div>
+                </div>
+            </div>  
+        </div>
+        <p class="copy">&copy;  Copyright 2023, All Rights Reserved by HacktheJob</p>
+    </footer>
+</body>
+</html>
