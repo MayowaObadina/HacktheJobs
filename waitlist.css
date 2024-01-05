@@ -77,7 +77,6 @@ input {
     outline: none;
 }
 
-
 .dropdown {
     border: 1px solid #D9DCE1;
     border-radius: 4px;
@@ -95,6 +94,7 @@ input {
     color: #333333;
     width: 100%;
     outline: none;
+    background: none;
 }
 
 .selected {
